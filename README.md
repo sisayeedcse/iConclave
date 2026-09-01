@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# iConclave
+
+A modern, high-performance web portal built for a multidisciplinary student technology and innovation competition.
+
+## Overview
+
+This project serves as the central hub for exploring various competition disciplines, event schedules, and registration details. It is designed with a minimal interface but maximum personality, focusing on speed, accessibility, and a premium user experience.
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Language:** TypeScript
+- **Deployment:** Vercel / Netlify Ready (Static Export Capable)
+
+## Features
+
+- **Dynamic Routing:** Statically generated detail pages for all competition tracks.
+- **Custom Design System:** Tailored typography scale, fluid spacing, and custom color tokens using Tailwind CSS v4's CSS variable engine.
+- **High Performance:** Heavily optimized for Core Web Vitals with minimal client-side JavaScript.
+- **Accessibility:** Reduced-motion preferences respected, semantic HTML, and ARIA attributes integrated.
+- **Data-Driven Architecture:** All competition content, FAQs, and schedules are isolated in a robust TypeScript data layer, cleanly separated from UI components.
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the live site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+This will compile the TypeScript, optimize the CSS, and statically generate all necessary routes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `/app` - Next.js App Router pages and global layouts
+- `/components` - Modular, reusable React components (UI primitives, layouts, sections)
+- `/data` - Centralized data layer containing all site content and configurations
+- `/lib` - Shared utilities and helpers
+- `/public` - Static assets, SVG graphics, and brand imagery
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All rights reserved. This repository contains proprietary code and design assets for the iConclave event.
