@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight, ExternalLink, ChevronLeft } from "lucide-react";
 import { AbstractGraphic } from "@/components/ui/AbstractGraphic";
 import { Tag } from "@/components/ui/Tag";
+import { CompetitionIcon } from "@/components/ui/CompetitionIcon";
 import type { Competition } from "@/data/competitions";
 
 export function CompetitionHero({ competition }: { competition: Competition }) {
@@ -47,8 +48,10 @@ export function CompetitionHero({ competition }: { competition: Competition }) {
           <span className="text-label text-[#8A8F98]">
             {String(competition.index).padStart(2, "0")}
           </span>
-          <span className="text-[#E7E8EC]">—</span>
-          <span className="text-sm text-[#5F6368]">{competition.organizerShort}</span>
+          <span className="text-[#E7E8EC]">-</span>
+          <div className="flex items-center justify-center p-1.5 rounded-md text-[#1455D9] bg-[#1455D9]/10">
+            <CompetitionIcon slug={competition.slug} size={18} />
+          </div>
         </motion.div>
 
         {/* Name */}

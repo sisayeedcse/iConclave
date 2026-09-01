@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { competitions } from "@/data/competitions";
 import { Tag } from "@/components/ui/Tag";
+import { CompetitionIcon } from "@/components/ui/CompetitionIcon";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -50,8 +51,9 @@ export default function CompetitionsPage() {
                     {comp.shortDescription}
                   </p>
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-xs text-[#8A8F98]">{comp.organizerShort}</span>
-                    <span className="text-[#E7E8EC]">·</span>
+                    <div className="flex items-center justify-center bg-white border border-[#E7E8EC] p-1.5 rounded-md text-[#111111] group-hover:text-[#1455D9] group-hover:border-[#1455D9]/30 transition-colors">
+                      <CompetitionIcon slug={comp.slug} size={16} />
+                    </div>
                     {comp.tags.map((tag) => (
                       <Tag key={tag} label={tag} />
                     ))}

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Tag } from "@/components/ui/Tag";
+import { CompetitionIcon } from "@/components/ui/CompetitionIcon";
 import type { Competition } from "@/data/competitions";
 
 interface CompetitionListItemProps {
@@ -54,8 +55,9 @@ export function CompetitionListItem({ competition, index }: CompetitionListItemP
             {competition.shortDescription}
           </p>
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs text-[#8A8F98]">{competition.organizerShort}</span>
-            <span className="text-[#E7E8EC]">·</span>
+            <div className="flex items-center justify-center bg-white border border-[#E7E8EC] p-1.5 rounded-md text-[#111111] group-hover:text-[var(--accent)] group-hover:border-[var(--accent)] transition-colors">
+              <CompetitionIcon slug={competition.slug} size={16} />
+            </div>
             {competition.tags.map((tag) => (
               <Tag key={tag} label={tag} />
             ))}

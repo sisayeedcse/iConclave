@@ -1,7 +1,8 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { competitions } from "@/data/competitions";
+import { CompetitionIcon } from "@/components/ui/CompetitionIcon";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -130,7 +131,10 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-xl text-[#111111] mb-1">{comp.name}</h3>
-                  <p className="text-xs text-[#8A8F98]">{comp.organizerShort}</p>
+                  <div className="flex items-center gap-1.5 text-xs text-[#1455D9] mt-2">
+                    <CompetitionIcon slug={comp.slug} size={14} />
+                    <span className="font-medium">Arena</span>
+                  </div>
                 </div>
                 <p className="text-[#5F6368] text-sm leading-relaxed line-clamp-3">
                   {comp.shortDescription}
