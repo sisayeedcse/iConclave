@@ -7,10 +7,11 @@ import { HowItWorks } from "@/components/home/HowItWorks";
 import { SchedulePreview } from "@/components/home/SchedulePreview";
 import { FAQPreview } from "@/components/home/FAQPreview";
 import { FinalCTA } from "@/components/home/FinalCTA";
+import { Organizers } from "@/components/home/Organizers";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "iConclave 2026 — Premier University",
+  title: "iConclave 2026 - Premier University",
   description:
     "iConclave 2026 is a multidisciplinary technology and innovation competition featuring PromptWar, PITCH3, Project Nexus, GoalBot Challenge, Research Exhibition, and The She-Suite Summit at Premier University.",
 };
@@ -26,6 +27,7 @@ export default function HomePage() {
       <HowItWorks />
       <SchedulePreview />
       <FAQPreview />
+      <Organizers />
       <FinalCTA />
     </>
   );
