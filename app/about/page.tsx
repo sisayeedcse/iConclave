@@ -41,7 +41,7 @@ export default function AboutPage() {
               <p className="text-[#5F6368] text-lg leading-relaxed">
                 iConclave is a multidisciplinary student technology and innovation competition
                 organized at Premier University, Chattogram, Bangladesh. It is a single,
-                unified platform that brings together five distinct competitions — each celebrating
+                unified platform that brings together six distinct events — each celebrating
                 a different way students can think, build, research, and innovate.
               </p>
               <p className="text-[#5F6368] text-lg leading-relaxed">
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   },
                   {
                     heading: "Interdisciplinary by design",
-                    body: "Five competitions across AI, robotics, research, and communication — because innovation doesn't respect department boundaries.",
+                    body: "Six events across AI, robotics, research, and communication — because innovation doesn't respect department boundaries.",
                   },
                   {
                     heading: "Recognition that matters",
@@ -110,7 +110,7 @@ export default function AboutPage() {
           <div className="mb-10">
             <span className="text-label text-[#8A8F98] block mb-3">Competitions</span>
             <h2 className="text-section font-display font-bold text-[#111111] tracking-tight">
-              FIVE ARENAS.
+              SIX ARENAS.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -164,19 +164,23 @@ export default function AboutPage() {
                   },
                   {
                     name: "Premier University Computer Club",
-                    role: "Organizing 3 Minutes Thesis",
+                    role: "Organizing PITCH3",
                   },
                   {
-                    name: "Premier University Robotics Club",
-                    role: "Organizing Project Showcasing",
+                    name: "Premier University Computer and Robotics Club",
+                    role: "Organizing Project Nexus",
                   },
                   {
                     name: "IEEE Robotics and Automation Society Premier University Student Branch Chapter",
-                    role: "Organizing Robo Soccer",
+                    role: "Organizing GoalBot Challenge",
                   },
                   {
                     name: "IEEE Power and Energy Society Premier University Student Branch Chapter",
-                    role: "Organizing Poster Presentation",
+                    role: "Organizing Research Exhibition",
+                  },
+                                  {
+                    name: "IEEE Women in Engineering",
+                    role: "Organizing The She-Suite Summit",
                   },
                 ].map((org) => (
                   <div

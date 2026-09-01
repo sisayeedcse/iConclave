@@ -83,7 +83,7 @@ export const competitions: Competition[] = [
     tagline: "Think. Prompt. Create.",
     heroLine: "YOUR PROMPT IS YOUR WEAPON.",
     organizer: "IEEE Computer Society Premier University Student Branch Chapter",
-    organizerShort: "IEEE CS PUSBC",
+    organizerShort: "IEEE CS",
     category: "Prompt Engineering / Artificial Intelligence",
     shortDescription:
       "A prompt engineering competition that challenges participants to harness AI through effective prompting, creative reasoning, and structured thinking.",
@@ -217,9 +217,9 @@ export const competitions: Competition[] = [
   },
 
   {
-    slug: "three-minutes-thesis",
-    name: "3 Minutes Thesis",
-    shortName: "3MT",
+    slug: "pitch3",
+    name: "PITCH3",
+    shortName: "PITCH3",
     tagline: "Three minutes. One idea. Make it count.",
     heroLine: "YOUR RESEARCH, DISTILLED.",
     organizer: "Premier University Computer Club",
@@ -354,12 +354,12 @@ export const competitions: Competition[] = [
 
   {
     slug: "project-showcasing",
-    name: "Project Showcasing",
-    shortName: "Project Showcase",
+    name: "Project Nexus",
+    shortName: "Project Nexus",
     tagline: "Build something worth showing.",
     heroLine: "SHOW WHAT YOU'VE BUILT.",
-    organizer: "Premier University Robotics Club",
-    organizerShort: "PURC",
+    organizer: "Premier University Computer and Robotics Club (PUCRC)",
+    organizerShort: "PUCRC",
     category: "Robotics / Innovation / Project Exhibition",
     shortDescription:
       "A project exhibition where participants showcase their prototypes, engineering ideas, and innovations to judges and fellow participants.",
@@ -488,14 +488,14 @@ export const competitions: Competition[] = [
   },
 
   {
-    slug: "robo-soccer",
-    name: "Robo Soccer",
-    shortName: "Robo Soccer",
+    slug: "goalbot-challenge",
+    name: "GoalBot Challenge",
+    shortName: "GoalBot Challenge",
     tagline: "Build. Strategize. Dominate.",
     heroLine: "ROBOTS ON THE PITCH.",
     organizer:
       "IEEE Robotics and Automation Society Premier University Student Branch Chapter",
-    organizerShort: "IEEE RAS PUSBC",
+    organizerShort: "IEEE RAS",
     category: "Robotics / Automation / Competition",
     shortDescription:
       "A robotics challenge where teams build and program robots to compete in a soccer-style tournament on a structured field.",
@@ -629,14 +629,14 @@ export const competitions: Competition[] = [
   },
 
   {
-    slug: "poster-presentation",
-    name: "Poster Presentation",
-    shortName: "Poster Presentation",
+    slug: "research-exhibition",
+    name: "Research Exhibition by Poster Presentation",
+    shortName: "Research Exhibition",
     tagline: "Research you can stand in front of.",
     heroLine: "YOUR RESEARCH, VISUALIZED.",
     organizer:
       "IEEE Power and Energy Society Premier University Student Branch Chapter",
-    organizerShort: "IEEE PES PUSBC",
+    organizerShort: "IEEE PES",
     category: "Power / Energy / Research / Presentation",
     shortDescription:
       "A poster presentation competition where participants communicate technical or research ideas through a compelling visual poster, with a focus on power and energy topics.",
@@ -764,6 +764,70 @@ export const competitions: Competition[] = [
     rulebookUrl: null,
     contact: null,
   },
+  {
+    slug: "she-suite-summit",
+    name: "The She-Suite Summit: Shaping Tomorrow’s Narrative",
+    shortName: "She-Suite Summit",
+    tagline: "Empowering Women in Tech and Leadership.",
+    heroLine: "SHAPING TOMORROW’S NARRATIVE.",
+    organizer: "IEEE Women in Engineering",
+    organizerShort: "IEEE WIE",
+    category: "Summit / Leadership / Tech",
+    shortDescription: "A summit dedicated to empowering women in technology, fostering leadership skills, and shaping the future narrative of the industry.",
+    longDescription: "The She-Suite Summit brings together aspiring women leaders, industry experts, and technologists to discuss challenges, share success stories, and build a strong network. It focuses on shaping the narrative for women in tech and leadership roles.",
+    accent: { from: "#C5229E", to: "#6633CC", single: "#C5229E" },
+    tags: ["Leadership", "Women in Tech", "Summit"],
+    index: 6,
+    facts: {
+      participation: "To be announced",
+      teamSize: "Individual/Group",
+      format: "To be announced",
+      duration: "To be announced",
+      date: "TBA",
+      venue: "TBA",
+      fee: "TBA",
+    },
+    rounds: [
+      {
+        number: "01",
+        title: "Register",
+        description: "Submit your registration to attend.",
+      }
+    ],
+    rules: [
+      {
+        title: "Eligibility",
+        items: ["Details to be announced. Check back soon."],
+      }
+    ],
+    judgingCriteria: [],
+    preparation: [
+      "Prepare questions for the speakers",
+      "Bring networking materials like business cards or digital profiles",
+    ],
+    dosDonts: {
+      dos: [
+        "Network with peers and speakers",
+        "Participate actively in discussions",
+      ],
+      donts: [
+        "Interrupt speakers during sessions",
+      ],
+    },
+    timeline: [
+      { label: "Registration Opens", date: null },
+      { label: "Summit Day", date: null },
+    ],
+    faqs: [
+      {
+        question: "Who can attend?",
+        answer: "Attendance details will be announced.",
+      }
+    ],
+    registrationUrl: null,
+    rulebookUrl: null,
+    contact: null,
+  }
 ];
 
 export function getCompetitionBySlug(slug: string): Competition | undefined {

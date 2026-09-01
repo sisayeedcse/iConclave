@@ -1,4 +1,4 @@
-import { MessageSquareCode, Timer, Bot, Presentation, RobotArm } from "lucide-react";
+import { MessageSquareCode, Timer, Bot, Presentation, RobotArm, Users } from "lucide-react";
 
 interface CompetitionIconProps {
   slug: string;
@@ -18,6 +18,8 @@ export function CompetitionIcon({ slug, className, size = 16 }: CompetitionIconP
       return <Presentation size={size} className={className} />;
     case "project-showcasing":
       return <RobotArm size={size} className={className} />;
+    case "she-suite-summit":
+      return <Users size={size} className={className} />;
     default:
       return <Bot size={size} className={className} />;
   }

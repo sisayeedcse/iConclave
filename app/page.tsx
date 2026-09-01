@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "iConclave 2026 — Premier University",
   description:
-    "iConclave 2026 is a multidisciplinary technology and innovation competition featuring PromptWar, 3 Minutes Thesis, Project Showcasing, Robo Soccer and Poster Presentation at Premier University.",
+    "iConclave 2026 is a multidisciplinary technology and innovation competition featuring PromptWar, PITCH3, Project Nexus, GoalBot Challenge, Research Exhibition, and The She-Suite Summit at Premier University.",
 };
 
 export default function HomePage() {

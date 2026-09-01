@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Competitions",
   description:
-    "Explore all five iConclave 2026 competitions: PromptWar, 3 Minutes Thesis, Project Showcasing, Robo Soccer, and Poster Presentation.",
+    "Explore all six iConclave 2026 events: PromptWar, PITCH3, Project Nexus, GoalBot Challenge, Research Exhibition, and The She-Suite Summit.",
 };
 
 export default function CompetitionsPage() {
@@ -22,7 +22,7 @@ export default function CompetitionsPage() {
             ALL COMPETITIONS.
           </h1>
           <p className="text-[#5F6368] text-xl max-w-xl leading-relaxed">
-            Five disciplines. Five ways to compete. Choose your arena.
+            Six disciplines. Six ways to compete. Choose your arena.
           </p>
         </div>
       </section>
